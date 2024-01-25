@@ -68,18 +68,16 @@ const images = [
 ];
 
 let imgGallery = document.querySelector('.gallery');
-console.log(imgGallery);
 let lightbox = new SimpleLightbox('.gallery .gallery-item .gallery-link ', {
   dowload: false,
   close: true,
   closeText: '×',
   captions: true,
-  captionData: 'alt',
+  captionsData: 'alt',
   captionType: 'attr',
   captionDelay: 250,
   captionSelector: 'img',
 });
-console.log(lightbox);
 
 const template = images
   .map(image => {
