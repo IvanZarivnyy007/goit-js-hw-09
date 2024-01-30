@@ -4,21 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/2-form.css" />
   </head>
   <body>
     <form class="feedback-form" autocomplete="off">
-      <label>
-        Email
-        <input class="input" type="email" name="email" autofocus />
-      </label>
-      <label>
-        Message
-        <textarea class="textarea" name="message" rows="8"></textarea>
-      </label>
+      <div class="label-end-input">
+        <label class="label">
+          Email
+          <input class="input" type="email" name="email" autofocus />
+        </label>
+      </div>
+      <div class="label-end-textarea">
+        <label class="label">
+          Message
+          <textarea class="textarea" name="message" rows="8"></textarea>
+        </label>
+      </div>
       <button class="button" type="submit">Submit</button>
     </form>
-
     <script type="module" src="./js/2-form.js"></script>
   </body>
 </html>

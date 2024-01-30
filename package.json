@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/vanilla-app-template/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "push": "git add . && git commit -m 'update' && git push"
   },
   "devDependencies": {
     "glob": "^8.1.0",
