@@ -23,8 +23,8 @@ function onFormSubmit(e) {
 }
 
 function onFormInput(e) {
-  const email = e.target.form.elements.email.value;
-  const message = e.target.form.elements.message.value;
+  const email = e.target.form.elements.email.value.trim();
+  const message = e.target.form.elements.message.value.trim();
   let data = {
     email,
     message,
